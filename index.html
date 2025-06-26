@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic of Javascript</title> 
+    <link href="css/styles.css" rel="stylesheet">
+    <script src="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+"></script>
+<link href="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+" rel="stylesheet">
+<script>
+  document.addEventListener( 'DOMContentLoaded', function() {
+    var splide = new Splide( '.splide' );
+    splide.mount();
+  } );
+</script>
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+<section class="splide" aria-label="Splide Basic HTML Example">
+  <div class="splide__track">
+		<ul class="splide__list">
+			<li class="splide__slide">
+                <img src="images/auckland.jpg" alt="Auckland beach"/>
+            </li>
+			<li class="splide__slide">
+                <img src="images/coromandel.jpg" alt="photo of coromandel"/>
+            </li>
+			<li class="splide__slide">
+                <img src="images/matangi.jpg" alt="bird from Matangi Island"/>
+            </li>
+		</ul>
+  </div>
+</section>
+        <div class="message-area" id="message-area">
+                <p id="errors"></p>
+        </div>
+       
+            <label>Please enter your Name:</label>
+            <input type="text" id="name-input">
+            <button onClick="validate()">Send</button>
+        
+       
+        
+    </main>
+    <script src="js/main.js" ></script>
+</body>
+</html>
